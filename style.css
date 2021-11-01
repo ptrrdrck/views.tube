@@ -79,6 +79,7 @@ a:hover {
 }
 
 .emoji {
+  cursor: pointer;
   font-size: var(--emojiSize);
   filter: var(--filterColor);
 }

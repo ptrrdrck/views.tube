@@ -22,6 +22,9 @@ html, body {
 :root {
   --primaryColor: white;
   --secondaryColor: black;
+  --altBgColor: rgba(0, 0, 0, 0.05);
+  --filterColor: hue-rotate(0deg);
+  --emojiSize: 2em;
 }
 
 body {
@@ -75,7 +78,7 @@ a:hover {
 }
 
 .emoji {
-  font-size: 2.6rem;
+  font-size: var(--emojiSize);
   filter: var(--filterColor);
 }
 

@@ -19,9 +19,14 @@ html, body {
   height: 100%;
 }
 
+:root {
+  --primaryColor: white;
+  --secondaryColor: black;
+}
+
 body {
-  background: rgb(63,94,251);
-  color: rgb(252,70,107);
+  background: var(--primaryColor);
+  color: var(--secondaryColor);
   display: flex;
   flex-direction: column;
 }
@@ -42,10 +47,10 @@ main {
 }
 
 a {
-  color: rgb(252,70,107);
+  color: var(--secondaryColor);
   text-decoration: none;
   line-height: 1.3;
-  background-color: rgba(1, 1, 1, 0.05);
+  background-color: var(--altBgColor);
   padding: 5px;
   border-radius: 5px;
   text-align: center;
@@ -70,11 +75,12 @@ a:hover {
 }
 
 .emoji {
-  font-size: 2rem;
+  font-size: 2.6rem;
+  filter: var(--filterColor);
 }
 
 .site-name {
-  background-color: rgba(1, 1, 1, 0.05);
+  background-color: var(--altBgColor);
   padding: 5px;
   border-radius: 5px;
 }
